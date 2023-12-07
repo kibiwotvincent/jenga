@@ -17,4 +17,4 @@ use App\Http\Controllers\AccountInquiryController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/balance', [AccountInquiryController::class, 'balance']);
+Route::get('/search', [AccountInquiryController::class, 'search']);

@@ -8,12 +8,15 @@ use NjoguAmos\Jenga\Api\AccountInquiry;
 class AccountInquiryController extends Controller
 {
 
-    public function balance(Request $request)
+    public function search(Request $request)
     {
-        $validated = $request->validate([
+        /*$validated = $request->validate([
             'countryCode' => ['required'],
             'accountNumber' => ['required'],
-        ]);
+        ]);*/
+        
+        $validated['countryCode'] = 'KE';
+        $validated['accountNumber'] = '1450160649886';
 
         $response = (new AccountInquiry())
             ->search(
