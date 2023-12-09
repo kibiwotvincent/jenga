@@ -17,4 +17,8 @@ use App\Http\Controllers\AccountInquiryController;
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/search', [AccountInquiryController::class, 'search']);
+Route::get('/balance', [AccountInquiryController::class, 'balance']);
+Route::get('/send', [AccountInquiryController::class, 'send']);
+Route::post('/equity/callback', [AccountInquiryController::class, 'callback']);
