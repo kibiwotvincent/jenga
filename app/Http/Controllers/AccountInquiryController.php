@@ -132,7 +132,7 @@ class AccountInquiryController extends Controller
                     "reference" => $reference,
                     "date" => "2023-12-09",
                     "description" => "Payment for invoice NT4345",
-                    "callbackUrl" => "https://ifam.co.ke/equity/callback"
+                    "callbackUrl" => "https://ifam.co.ke/api/equity/callback"
                 ]
             ]);
 
