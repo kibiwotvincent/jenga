@@ -103,7 +103,7 @@ class AccountInquiryController extends Controller
         
         $amount = 5;
         $currencyCode = "KES";
-        $reference = "TMN0000012366";
+        $reference = "TMN".time();
         $accountNumber = 1090161410997;
         
         $params = ['amount' => $amount, 'currencyCode' => $currencyCode, 'reference' => $reference, 'accountNumber' => $accountNumber];
