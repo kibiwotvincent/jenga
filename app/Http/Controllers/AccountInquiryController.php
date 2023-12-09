@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use NjoguAmos\Jenga\Api\AccountInquiry;
 use Illuminate\Support\Facades\Http;
 use Spatie\Crypto\Rsa\PrivateKey;
+use Log;
 
 class AccountInquiryController extends Controller
 {
